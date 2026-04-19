@@ -1,0 +1,24 @@
+def greet():
+    print("No Parameter No Return fn")
+def greetings():
+    return "No Parameter but Return fn"
+def add(x,y):
+    print("2 Parameter No Return fn")
+    print(x+y)
+def addition(x,y):
+    print("2 Parameter and Return fn")
+    return x+y
+sum = lambda a,b:a+b
+# Calling the functions:
+greet()
+ret=greetings()
+print(ret)
+add(3,4)
+print(addition(10,20))
+print(sum(30,40))
+
+def hof(lof,x,y):
+    return lof(x,y)
+
+print(hof(addition, 6, 7))
+print(hof(lambda x,y:x*y,8,9))
